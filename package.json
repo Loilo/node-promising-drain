@@ -1,6 +1,6 @@
 {
   "name": "promising-drain",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Execute asynchronous functions in order",
   "main": "index.js",
   "repository": {
