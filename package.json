@@ -1,0 +1,23 @@
+{
+  "name": "promising-drain",
+  "version": "1.0.0",
+  "description": "Execute asynchronous functions in order",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Loilo/node-promising-queue.git"
+  },
+  "keywords": [
+    "queue",
+    "async"
+  ],
+  "author": "Florian Reuschel <florian@loilo.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Loilo/node-promising-queue/issues"
+  },
+  "homepage": "https://github.com/Loilo/node-promising-queue#readme",
+  "engines": {
+    "node": ">=6.5.0"
+  }
+}
