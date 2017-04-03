@@ -33,10 +33,12 @@ class Drain {
     this._queue.push(callback)
 
     if (this._queue.length === 1) this._drain()
+    return this
   }
   
   clear () {
     this._queue.splice(this._draining ? 1 : 0)
+    return this
   }
   
   get corked () {
@@ -52,6 +54,7 @@ class Drain {
     
     this._corked = true
     this._emitter.emit('cork')
+    return this
   }
   
   uncork () {
@@ -59,6 +62,7 @@ class Drain {
     this._corked = false
     this._emitter.emit('uncork')
     if (this._queue.length) this._drain()
+    return this
   }
   
   _drain () {
