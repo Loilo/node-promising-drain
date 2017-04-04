@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Loilo/node-promising-queue.git"
+    "url": "git+https://github.com/Loilo/node-promising-drain.git"
   },
   "keywords": [
     "queue",
@@ -14,10 +14,13 @@
   "author": "Florian Reuschel <florian@loilo.de>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Loilo/node-promising-queue/issues"
+    "url": "https://github.com/Loilo/node-promising-drain/issues"
   },
-  "homepage": "https://github.com/Loilo/node-promising-queue#readme",
+  "homepage": "https://github.com/Loilo/node-promising-drain#readme",
   "engines": {
     "node": ">=6.5.0"
+  },
+  "dependencies": {
+    "mitt": "^1.1.0"
   }
 }
