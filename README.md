@@ -22,6 +22,8 @@ drain.pour(asyncFunction2)
 
 The drain will instantly start dripping and execute `asyncFunction2` as soon as `asynFunction1` finishes.
 
+The `pour()` method also returns a promise that will resolve then the function has been executed and be rejected if it definitely won't (e.g. the queue is cleared beforehand).
+
 **Hint:** Your functions are expected to return promises. They'll be wrapped in `Promise.resolve` though, meaning that you can also use synchronous functions returning anything else if you need to.
 
 
