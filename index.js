@@ -72,7 +72,7 @@ class Drain {
   }
 
   get remaining () {
-    return this._queue
+    return this._queue.length
   }
 
   cork () {

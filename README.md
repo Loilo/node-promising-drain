@@ -48,7 +48,7 @@ drain.clear()
 ### Get queue information
 Check the number of remaining functions in the drain:
 ```javascript
-drain.remaining === true
+drain.remaining.length === someNumber
 ```
 
 See if the drain is currently corked:
