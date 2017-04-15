@@ -57,12 +57,12 @@ drain.corked === true
 ```
 
 ## Events
-This module employs emits some events that may be listened to via the infamous `.on()`, `.once()` and `.off()` method.
+This module emits some events that may be listened to via the infamous `.on()`, `.once()` and `.off()` method.
 
 ### `drip`
-The module fires a `drip` module whenever the currently executed function finishes.
+The module fires a `drip` event whenever the currently executed function finishes.
 
-The resolved result of the function will be passed as parameter to listeners.
+The parameter passed to the listeners will be an object containing a `result` property that is the resolved result of the function.
 
 ### `error`
 An `error` event gets emitted when a function in the drain throws an exception.
