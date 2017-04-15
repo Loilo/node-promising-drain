@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "babel src --presets es2015 -d dist",
-    "prepublish": "npm run compile"
+    "prepublish": "npm run build"
   },
   "keywords": [
     "queue",
