@@ -2,10 +2,14 @@
   "name": "promising-drain",
   "version": "1.2.2",
   "description": "Execute asynchronous functions in order",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Loilo/node-promising-drain.git"
+  },
+  "scripts": {
+    "build": "babel src --presets es2015 -d dist",
+    "prepublish": "npm run compile"
   },
   "keywords": [
     "queue",
@@ -17,10 +21,11 @@
     "url": "https://github.com/Loilo/node-promising-drain/issues"
   },
   "homepage": "https://github.com/Loilo/node-promising-drain#readme",
-  "engines": {
-    "node": ">=6.5.0"
-  },
   "dependencies": {
     "mitt": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1"
   }
 }
