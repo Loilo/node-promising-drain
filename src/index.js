@@ -35,8 +35,12 @@ class Drain {
       : Date.now()
     const id = String(timestamp + Math.random() * 1000000) // good enough
 
+    let remaining = this._queue.push({ id, callback })
+
     const executed = new Promise((resolve, reject) => {
       const checkDrip = evt => {
+        remaining--
+
         if (evt.id === id) {
           this.off('drip', checkDrip)
           this.off('drained', checkDrained)
