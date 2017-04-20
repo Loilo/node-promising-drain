@@ -6,7 +6,7 @@ const mitt = require('mitt')
 class Drain {
   constructor () {
     this._queue = []
-    this._emitter = mitt()
+    this._emitter = mitt.__esModule ? mitt.default() : mitt()
     this._draining = false
   }
 
